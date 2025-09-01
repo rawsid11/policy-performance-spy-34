@@ -344,34 +344,34 @@ export function BranchPerformanceView() {
                 labelFormatter={(label) => `Month: ${label}`}
               />
               
-              {/* Due Amount as light background bars */}
+              {/* Total Due Amount - Light blue bars */}
               <Bar 
                 yAxisId="amount"
                 dataKey="totalDue" 
-                fill="hsl(var(--muted) / 0.3)" 
+                fill="hsl(220 70% 85%)" 
                 name="totalDue" 
                 radius={[2, 2, 0, 0]}
               />
               
-              {/* Actual Collections as primary bars */}
+              {/* Actual Collections - Green bars */}
               <Bar 
                 yAxisId="amount"
                 dataKey="totalCollection" 
-                fill="hsl(var(--primary))" 
+                fill="hsl(140 70% 55%)" 
                 name="totalCollection" 
                 radius={[2, 2, 0, 0]}
               />
               
-              {/* Forecasted Collections as dashed line */}
+              {/* Forecasted Collections - Orange dashed line */}
               <Line 
                 yAxisId="amount"
                 type="monotone" 
                 dataKey="forecastedCollection" 
-                stroke="hsl(var(--chart-3))" 
+                stroke="hsl(30 90% 60%)" 
                 strokeWidth={3}
                 strokeDasharray="8 4"
                 name="forecastedCollection"
-                dot={{ fill: 'hsl(var(--chart-3))', strokeWidth: 2, r: 5 }}
+                dot={{ fill: 'hsl(30 90% 60%)', strokeWidth: 2, r: 5 }}
                 connectNulls={false}
               />
               
