@@ -25,15 +25,15 @@ export function MonthlyPerformanceChart() {
             
             if (entry.dataKey === 'totalDue') {
               return (
-                <p key={index} className="text-muted-foreground">
+                <p key={index} className="text-blue-600">
                   <span className="inline-block w-3 h-3 rounded mr-2" style={{backgroundColor: entry.color}}></span>
-                  {`Total Due: ${formattedValue}`}
+                  {`Total RP Due: ${formattedValue}`}
                 </p>
               );
             }
             if (entry.dataKey === 'collections') {
               return (
-                <p key={index} className="text-primary">
+                <p key={index} className="text-green-600">
                   <span className="inline-block w-3 h-3 rounded mr-2" style={{backgroundColor: entry.color}}></span>
                   {`Actual Collection: ${formattedValue}`}
                 </p>
@@ -41,7 +41,7 @@ export function MonthlyPerformanceChart() {
             }
             if (entry.dataKey === 'forecastedCollection') {
               return (
-                <p key={index} className="text-accent">
+                <p key={index} className="text-orange-600">
                   <span className="inline-block w-3 h-3 rounded mr-2" style={{backgroundColor: entry.color}}></span>
                   {`Forecasted: ${formattedValue}`}
                 </p>
@@ -127,40 +127,39 @@ export function MonthlyPerformanceChart() {
               }}
             />
             
-            {/* Total Due Amount - Background bars */}
+            {/* Total Due Amount - Light blue bars */}
             <Bar 
               dataKey="totalDue" 
               name="Total RP Due"
-              fill="hsl(var(--muted))" 
+              fill="hsl(220 70% 85%)" 
               radius={[4, 4, 0, 0]}
-              opacity={0.3}
             />
             
-            {/* Actual Collections - Primary bars */}
+            {/* Actual Collections - Green bars */}
             <Bar 
               dataKey="collections" 
               name="Actual Collection"
-              fill="hsl(var(--primary))" 
+              fill="hsl(140 70% 55%)" 
               radius={[4, 4, 0, 0]}
             />
             
-            {/* Forecasted Collections - Dotted line */}
+            {/* Forecasted Collections - Orange dotted line */}
             <Line 
               type="monotone" 
               dataKey="forecastedCollection" 
               name="Forecasted Collection"
-              stroke="hsl(var(--accent))" 
+              stroke="hsl(30 90% 60%)" 
               strokeWidth={3}
               strokeDasharray="8 4"
               dot={{ 
-                fill: 'hsl(var(--accent))', 
+                fill: 'hsl(30 90% 60%)', 
                 strokeWidth: 2, 
                 r: 6,
                 stroke: 'hsl(var(--background))'
               }}
               activeDot={{ 
                 r: 8, 
-                fill: 'hsl(var(--accent))',
+                fill: 'hsl(30 90% 60%)',
                 stroke: 'hsl(var(--background))',
                 strokeWidth: 2
               }}
