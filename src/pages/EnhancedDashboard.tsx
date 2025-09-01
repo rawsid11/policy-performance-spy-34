@@ -3,7 +3,7 @@ import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import { NavigationTabs, DashboardView } from "@/components/dashboard/NavigationTabs";
 import { FilterPanel, DashboardFilters } from "@/components/dashboard/FilterPanel";
 import { KPICard } from "@/components/dashboard/KPICard";
-import { CollectionRateChart } from "@/components/dashboard/charts/CollectionRateChart";
+import { MonthlyPerformanceChart } from "@/components/dashboard/charts/MonthlyPerformanceChart";
 import { RegionPerformanceChart } from "@/components/dashboard/charts/RegionPerformanceChart";
 import { ProductContributionChart } from "@/components/dashboard/charts/ProductContributionChart";
 import { PaymentMechanismChart } from "@/components/dashboard/charts/PaymentMechanismChart";
@@ -123,7 +123,7 @@ const EnhancedDashboard = () => {
 
             {/* Charts Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <CollectionRateChart />
+              <MonthlyPerformanceChart />
               <RegionPerformanceChart />
             </div>
 

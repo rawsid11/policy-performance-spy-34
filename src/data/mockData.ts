@@ -82,14 +82,15 @@ export const paymentMechanismSuccess = [
 ];
 
 export const monthlyTrends = [
-  { month: "JAN-25", policies: 11200, collectionRate: 88.5, collections: 52000000 },
-  { month: "FEB-25", policies: 11800, collectionRate: 89.2, collections: 54500000 },
-  { month: "MAR-25", policies: 12100, collectionRate: 90.1, collections: 56200000 },
-  { month: "APR-25", policies: 12300, collectionRate: 87.8, collections: 55800000 },
-  { month: "MAY-25", policies: 12500, collectionRate: 89.7, collections: 57400000 },
-  { month: "JUN-25", policies: 12650, collectionRate: 91.2, collections: 58900000 },
-  { month: "JUL-25", policies: 12720, collectionRate: 90.8, collections: 59200000 },
-  { month: "AUG-25", policies: 12847, collectionRate: 91.1, collections: 58412000 }
+  { month: "JAN-25", policies: 11200, collectionRate: 88.5, collections: 52000000, totalDue: 58800000, forecastedCollection: 51500000 },
+  { month: "FEB-25", policies: 11800, collectionRate: 89.2, collections: 54500000, totalDue: 61100000, forecastedCollection: 54000000 },
+  { month: "MAR-25", policies: 12100, collectionRate: 90.1, collections: 56200000, totalDue: 62400000, forecastedCollection: 56800000 },
+  { month: "APR-25", policies: 12300, collectionRate: 87.8, collections: 55800000, totalDue: 63500000, forecastedCollection: 57200000 },
+  { month: "MAY-25", policies: 12500, collectionRate: 89.7, collections: 57400000, totalDue: 64000000, forecastedCollection: 58100000 },
+  { month: "JUN-25", policies: 12650, collectionRate: 91.2, collections: 58900000, totalDue: 64600000, forecastedCollection: 59200000 },
+  { month: "JUL-25", policies: 12720, collectionRate: 90.8, collections: 59200000, totalDue: 65200000, forecastedCollection: 59800000 },
+  { month: "AUG-25", policies: 12847, collectionRate: 91.1, collections: 58412000, totalDue: 64100000, forecastedCollection: 58900000 },
+  { month: "SEP-25", policies: 12950, collectionRate: 92.3, collections: 0, totalDue: 64800000, forecastedCollection: 59800000 }
 ];
 
 export const branchProductivity = [
